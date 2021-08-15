@@ -1,0 +1,25 @@
+{
+  "name": "gammembers-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vallimmateus/gammembers-2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vallimmateus/gammembers-2.0/issues"
+  },
+  "homepage": "https://github.com/vallimmateus/gammembers-2.0#readme",
+  "dependencies": {
+    "next": "^11.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
