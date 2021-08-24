@@ -20,6 +20,7 @@ export function AuthProvider({ children }) {
 				.auth()
 				.signInWithEmailAndPassword(email, password)
 				.then((userCredential) => {
+					console.log("dentro da userCredential");
 					setUser(userCredential.user);
 					router.push("/home");
 				})
