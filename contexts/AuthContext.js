@@ -10,9 +10,7 @@ export function AuthProvider({ children }) {
 	const router = useRouter();
 
 	const signin = (email, password) => {
-		console.log("> signin");
 		try {
-			console.log("> try");
 			setLoading(true);
 			console.log(email);
 			console.log(password);
@@ -20,7 +18,6 @@ export function AuthProvider({ children }) {
 				.auth()
 				.signInWithEmailAndPassword(email, password)
 				.then((userCredential) => {
-					console.log("dentro da userCredential");
 					setUser(userCredential.user);
 					router.push("/home");
 				})
@@ -30,7 +27,7 @@ export function AuthProvider({ children }) {
 					alert(error.toString());
 				});
 		} catch {
-			console.log("não deu certo");
+			alert("Login failed: Contacte o desenvolvedor da aplicação");
 		} finally {
 			setLoading(false);
 		}
